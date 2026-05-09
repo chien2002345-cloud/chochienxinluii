@@ -210,8 +210,8 @@ src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
 </div>
 
 <!-- NHẠC -->
-<audio id="music" loop>
-    <source src="maimai.mp3" type="audio/mpeg">
+<audio id="music" autoplay loop>
+    <source src="https://files.catbox.moe/6r3zqf.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -316,7 +316,7 @@ document.body.addEventListener(
 
     music.volume = 1;
 
-    music.play();
+   music.play().catch(()=>{});
 
 },
 
